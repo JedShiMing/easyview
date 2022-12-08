@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    声明属性,否则重复属性会报错 -->
+    <attr name="ev_bg_color" format="color" />
+    <attr name="ev_left_top_radius" format="dimension" />
+    <attr name="ev_right_top_radius" format="dimension" />
+    <attr name="ev_left_bottom_radius" format="dimension" />
+    <attr name="ev_right_bottom_radius" format="dimension" />
+    <attr name="ev_radius" format="dimension" />
+
+    <!--    整合所有view的参数-->
+    <declare-styleable name="EasyView">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyButton">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyImageView">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyTextView">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyLinearLayout">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+    </declare-styleable>
+</resources>
