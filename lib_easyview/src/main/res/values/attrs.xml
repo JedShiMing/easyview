@@ -7,6 +7,9 @@
     <attr name="ev_left_bottom_radius" format="dimension" />
     <attr name="ev_right_bottom_radius" format="dimension" />
     <attr name="ev_radius" format="dimension" />
+    <attr name="ev_overflow" format="boolean" />
+    <attr name="ev_stroke_width" format="dimension" />
+    <attr name="ev_stroke_color" format="dimension" />
 
     <!--    整合所有view的参数-->
     <declare-styleable name="EasyView">
@@ -16,6 +19,9 @@
         <attr name="ev_left_bottom_radius" />
         <attr name="ev_right_bottom_radius" />
         <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
     </declare-styleable>
 
     <declare-styleable name="EasyButton">
@@ -25,6 +31,9 @@
         <attr name="ev_left_bottom_radius" />
         <attr name="ev_right_bottom_radius" />
         <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
     </declare-styleable>
 
     <declare-styleable name="EasyImageView">
@@ -34,6 +43,9 @@
         <attr name="ev_left_bottom_radius" />
         <attr name="ev_right_bottom_radius" />
         <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
     </declare-styleable>
 
     <declare-styleable name="EasyTextView">
@@ -43,6 +55,9 @@
         <attr name="ev_left_bottom_radius" />
         <attr name="ev_right_bottom_radius" />
         <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
     </declare-styleable>
 
     <declare-styleable name="EasyLinearLayout">
