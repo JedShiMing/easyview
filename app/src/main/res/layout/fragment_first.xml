@@ -37,6 +37,8 @@
         app:ev_left_top_radius="100dp"
         app:ev_overflow="true"
         app:ev_right_top_radius="100dp"
+        app:ev_stroke_width="10dp"
+        app:ev_stroke_color="@color/purple_200"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/button_first" />

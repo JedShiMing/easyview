@@ -9,7 +9,7 @@
     <attr name="ev_radius" format="dimension" />
     <attr name="ev_overflow" format="boolean" />
     <attr name="ev_stroke_width" format="dimension" />
-    <attr name="ev_stroke_color" format="dimension" />
+    <attr name="ev_stroke_color" format="color" />
 
     <!--    整合所有view的参数-->
     <declare-styleable name="EasyView">
