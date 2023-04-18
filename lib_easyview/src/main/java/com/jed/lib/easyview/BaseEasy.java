@@ -14,9 +14,9 @@ import android.view.View;
 
 /**
  * 自定义View
- * 1. 圆角
- * 2. 边框
- * 3. 渐变
+ * 1. 圆角 √
+ * 2. 边框 √
+ * 3. 渐变 ×
  * 4. 各种点击事件, 节流
  */
 public class BaseEasy {
@@ -43,9 +43,7 @@ public class BaseEasy {
 
     public void initView(View view, Context context, AttributeSet attrs) {
         paint = new Paint();
-        paint = new Paint();
         paint.setAntiAlias(true);
-        rectF = new RectF();
         rectF = new RectF();
 
         this.mView = view;
@@ -68,12 +66,15 @@ public class BaseEasy {
             int[] colors = new int[]{bgColor, bgColor};
             gradientDrawable = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, colors);
             gradientDrawable.setCornerRadii(radii);
+
             view.setBackground(gradientDrawable);
         }
 
         array.recycle();
+
     }
 
+    // 裁剪圆角
     public void draw(Canvas canvas) {
         if (overflow) {
             rectF.set(0, 0, mView.getWidth(), mView.getHeight());
@@ -81,15 +82,16 @@ public class BaseEasy {
             path.addRoundRect(rectF, radii, Path.Direction.CW);
             canvas.clipPath(path);
         }
-        drawBorder(canvas);
     }
 
-    private void drawBorder(Canvas canvas) {
+    // 绘制边框
+    public void drawBorder(Canvas canvas) {
         if (strokeWidth > 0f && strokeColor != Color.TRANSPARENT) {
+            rectF.set(0, 0, mView.getWidth(), mView.getHeight());
+            Path path = new Path();
+            paint.setStyle(Paint.Style.STROKE);
             paint.setColor(strokeColor);
             paint.setStrokeWidth(strokeWidth);
-            paint.setStyle(Paint.Style.STROKE);
-            Path path = new Path();
             path.addRoundRect(rectF, radii, Path.Direction.CW);
             canvas.drawPath(path, paint);
         }
