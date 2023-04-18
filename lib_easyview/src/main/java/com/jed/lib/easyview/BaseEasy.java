@@ -13,7 +13,8 @@ import android.view.View;
 
 
 /**
- * 自定义View
+ * 自定义EasyView的基类
+ * 优先使用背景,不规则角度采用draw
  * 1. 圆角 √
  * 2. 边框 √
  * 3. 渐变 ×
@@ -66,6 +67,7 @@ public class BaseEasy {
             int[] colors = new int[]{bgColor, bgColor};
             gradientDrawable = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM, colors);
             gradientDrawable.setCornerRadii(radii);
+            gradientDrawable.setStroke((int) strokeWidth, strokeColor);
 
             view.setBackground(gradientDrawable);
         }
@@ -86,7 +88,7 @@ public class BaseEasy {
 
     // 绘制边框
     public void drawBorder(Canvas canvas) {
-        if (strokeWidth > 0f && strokeColor != Color.TRANSPARENT) {
+        if (overflow && strokeWidth > 0f && strokeColor != Color.TRANSPARENT) {
             rectF.set(0, 0, mView.getWidth(), mView.getHeight());
             Path path = new Path();
             paint.setStyle(Paint.Style.STROKE);
