@@ -67,5 +67,20 @@
         <attr name="ev_left_bottom_radius" />
         <attr name="ev_right_bottom_radius" />
         <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyRelativeLayout">
+        <attr name="ev_bg_color" />
+        <attr name="ev_left_top_radius" />
+        <attr name="ev_right_top_radius" />
+        <attr name="ev_left_bottom_radius" />
+        <attr name="ev_right_bottom_radius" />
+        <attr name="ev_radius" />
+        <attr name="ev_overflow" />
+        <attr name="ev_stroke_width" />
+        <attr name="ev_stroke_color" />
     </declare-styleable>
 </resources>

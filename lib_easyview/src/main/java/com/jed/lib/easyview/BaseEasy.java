@@ -18,7 +18,7 @@ import android.view.View;
  * 1. 圆角 √
  * 2. 边框 √
  * 3. 渐变 ×
- * 4. 各种点击事件, 节流
+ * 4. 各种点击事件, 节流 ×
  */
 public class BaseEasy {
     private static final String TAG = BaseEasy.class.getName();
